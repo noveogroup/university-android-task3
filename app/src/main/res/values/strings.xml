@@ -13,4 +13,10 @@
     <string name="themed">Action bar with custom theme</string>
     <string name="action">Action bar with Action view</string>
 
+    <string name="first">first</string>
+    <string name="second">second</string>
+    <string name="third">third</string>
+    <string name="fourth">fourth</string>
+    <string name="menu_item_selected_format">You pressed %s button!</string>
+
 </resources>
