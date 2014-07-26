@@ -18,5 +18,13 @@
     <string name="third">third</string>
     <string name="fourth">fourth</string>
     <string name="menu_item_selected_format">You pressed %s button!</string>
+    <string name="tab_title_format">Tab %d</string>
+    <string name="tab_selected_format">Tab %d selected</string>
+    <string-array name="list_items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </string-array>
+    <string name="list_item_selected_format">Item with position %d selected</string>
 
 </resources>
