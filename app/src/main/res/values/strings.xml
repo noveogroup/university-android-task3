@@ -26,5 +26,7 @@
         <item>Item 3</item>
     </string-array>
     <string name="list_item_selected_format">Item with position %d selected</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Google Search</string>
 
 </resources>
