@@ -22,7 +22,7 @@ public class ActionViewActivity extends AbsMenuActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                String url = "https://google.com/search?q=" + Uri.encode(query);
+                String url = getString(R.string.search_query_format, Uri.encode(query));
                 intent.setData(Uri.parse(url));
                 startActivity(intent);
                 return false;
