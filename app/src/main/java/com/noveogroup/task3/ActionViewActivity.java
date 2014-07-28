@@ -40,5 +40,6 @@ public class ActionViewActivity extends AbsMenuActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(new View(this));
     }
 }
