@@ -13,4 +13,21 @@
     <string name="themed">Action bar with custom theme</string>
     <string name="action">Action bar with Action view</string>
 
+    <string name="first">first</string>
+    <string name="second">second</string>
+    <string name="third">third</string>
+    <string name="fourth">fourth</string>
+    <string name="menu_item_selected_format">You pressed %s button!</string>
+    <string name="tab_title_format">Tab %d</string>
+    <string name="tab_selected_format">Tab %d selected</string>
+    <string-array name="list_items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </string-array>
+    <string name="list_item_selected_format">Item with position %d selected</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Google Search</string>
+    <string name="search_query_format">https://google.com/search?q=%s</string>
+
 </resources>
