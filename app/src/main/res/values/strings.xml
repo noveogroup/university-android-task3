@@ -16,6 +16,7 @@
     <string name="hello">Hello</string>
     <string name="world">World</string>
     <string name="about">About</string>
+    <string name="search">Search</string>
     <string name="title_activity_simple_up_bar">SimpleUpBar</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_split_action_bar">SplitActionBar</string>
@@ -34,5 +35,13 @@
     <string name="title_activity_custom_view">CustomView</string>
     <string name="title_activity_custom_theme">CustomTheme</string>
     <string name="title_activity_action_view">ActionView</string>
+
+    <string name="custom_search_hint">Search Custom View</string>
+    <string name="toast_text_hello">This is Hello item</string>
+    <string name="toast_text_world">This is World item</string>
+    <string name="toast_text_about">This is About item</string>
+    <string name="toast_text_tab_unselected">Out in with tab</string>
+    <string name="toast_text_tab_reselected_begin">Tab</string>
+    <string name="toast_text_tab_reselected_end">selected again</string>
 
 </resources>

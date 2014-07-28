@@ -6,12 +6,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.noveogroup.task3.NavigationList">
+    tools:context="com.noveogroup.task3.NavigationListActivity">
 
     <TextView
         android:id="@+id/list_info"
         android:text="@string/title_activity_navigation_list"
-        android:textSize="40sp"
+        android:textSize="@dimen/activity_text_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

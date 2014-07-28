@@ -16,7 +16,7 @@
             android:background="@color/search_background"
             android:imeOptions="actionSearch"
             android:inputType="text"
-            android:hint="Search Custom View"/>
+            android:hint="@string/custom_search_hint"/>
     </FrameLayout>
 
 </RelativeLayout>

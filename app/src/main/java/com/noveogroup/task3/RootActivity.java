@@ -40,49 +40,49 @@ public class RootActivity extends ActionBarActivity {
         simpleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RootActivity.this, SimpleActionBar.class));
+                startActivity(new Intent(RootActivity.this, SimpleActionBarActivity.class));
             }
         });
         simpleUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RootActivity.this, SimpleUpBar.class));
+                startActivity(new Intent(RootActivity.this, SimpleUpBarActivity.class));
             }
         });
         splitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RootActivity.this, SplitActionBar.class));
+                startActivity(new Intent(RootActivity.this, SplitActionBarActivity.class));
             }
         });
         navigationTabsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RootActivity.this, NavigationTabs.class));
+                startActivity(new Intent(RootActivity.this, NavigationTabsActivity.class));
             }
         });
         navigationListButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RootActivity.this, NavigationList.class));
+                startActivity(new Intent(RootActivity.this, NavigationListActivity.class));
             }
         });
         customViewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RootActivity.this, CustomView.class));
+                startActivity(new Intent(RootActivity.this, CustomViewActivity.class));
             }
         });
         customThemeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RootActivity.this, CustomTheme.class));
+                startActivity(new Intent(RootActivity.this, CustomThemeActivity.class));
             }
         });
         actionViewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RootActivity.this, ActionView.class));
+                startActivity(new Intent(RootActivity.this, ActionViewActivity.class));
             }
         });
     }

@@ -1,16 +1,16 @@
 package com.noveogroup.task3;
 
+import android.content.res.Resources;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class NavigationTabs extends ActionBarActivity implements ActionBar.TabListener {
+public class NavigationTabsActivity extends ActionBarActivity implements ActionBar.TabListener {
     private ActionBar actionBar;
     private TextView info;
 
@@ -27,20 +27,15 @@ public class NavigationTabs extends ActionBarActivity implements ActionBar.TabLi
     }
 
     private void createTabs() {
-        ActionBar.Tab videoTab = actionBar.newTab();
-        videoTab.setText(R.string.video);
-        videoTab.setTabListener(this);
-        actionBar.addTab(videoTab);
+        Resources res = getResources();
+        String[] titles = res.getStringArray(R.array.categories);
 
-        ActionBar.Tab musicTab = actionBar.newTab();
-        musicTab.setText(R.string.music);
-        musicTab.setTabListener(this);
-        actionBar.addTab(musicTab);
-
-        ActionBar.Tab imagesTab = actionBar.newTab();
-        imagesTab.setText(R.string.images);
-        imagesTab.setTabListener(this);
-        actionBar.addTab(imagesTab);
+        for(String str : titles) {
+            ActionBar.Tab tab = actionBar.newTab();
+            tab.setText(str);
+            tab.setTabListener(this);
+            actionBar.addTab(tab);
+        }
     }
 
     @Override
@@ -54,19 +49,16 @@ public class NavigationTabs extends ActionBarActivity implements ActionBar.TabLi
         boolean ret;
         switch (item.getItemId()) {
             case R.id.hello_item:
-                Log.d("Simple", "hello_item");
                 ret = true;
-                Toast.makeText(this, "This is Hello item", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.toast_text_hello, Toast.LENGTH_LONG).show();
                 break;
             case  R.id.world_item:
-                Log.d("Simple","world_item");
                 ret = true;
-                Toast.makeText(this, "This is World item",Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.toast_text_world,Toast.LENGTH_LONG).show();
                 break;
             case R.id.about_item:
-                Log.d("Simple","about_item");
                 ret = true;
-                Toast.makeText(this, "This is About item",Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.toast_text_about,Toast.LENGTH_LONG).show();
                 break;
             default:
                 ret = super.onOptionsItemSelected(item);
@@ -81,11 +73,13 @@ public class NavigationTabs extends ActionBarActivity implements ActionBar.TabLi
 
     @Override
     public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-        Toast.makeText(this,"Out in with tab " + tab.getText(),Toast.LENGTH_SHORT);
+        String toastText = String.format("%s %s", getString(R.string.toast_text_tab_unselected), tab.getText().toString());
+        Toast.makeText(this, toastText,Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-        Toast.makeText(this,"Tab " + tab.getText() + " selected again",Toast.LENGTH_SHORT);
+        String toastText = String.format("%s %s %s", getString(R.string.toast_text_tab_reselected_begin), tab.getText().toString(), getString(R.string.toast_text_tab_reselected_end));
+        Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show();
     }
 }

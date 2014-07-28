@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.noveogroup.task3.SplitActionBar" >
+    tools:context="com.noveogroup.task3.SplitActionBarActivity" >
 
     <item android:id="@+id/hello_item"
         android:title="@string/hello"
@@ -16,7 +16,7 @@
         app:showAsAction="always" />
 
     <item android:id="@+id/search_item"
-        android:title="Search"
+        android:title="@string/search"
         android:icon="@drawable/search_ic"
         app:showAsAction="always|withText" />
 

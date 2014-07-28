@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class SimpleUpBar extends ActionBarActivity {
+public class SimpleUpBarActivity extends ActionBarActivity {
     private ActionBar actionBar;
 
     @Override
@@ -32,15 +32,15 @@ public class SimpleUpBar extends ActionBarActivity {
         switch (item.getItemId()) {
             case R.id.hello_item:
                 ret = true;
-                Toast.makeText(this, "This is Hello item", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.toast_text_hello, Toast.LENGTH_LONG).show();
                 break;
             case  R.id.world_item:
                 ret = true;
-                Toast.makeText(this, "This is World item",Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.toast_text_world,Toast.LENGTH_LONG).show();
                 break;
             case R.id.about_item:
                 ret = true;
-                Toast.makeText(this, "This is About item",Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.toast_text_about,Toast.LENGTH_LONG).show();
                 break;
             default:
                 ret = super.onOptionsItemSelected(item);
