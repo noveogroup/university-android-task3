@@ -9,7 +9,7 @@ public class CustomViewActivity extends AbsMenuActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         View customView  = new View(this);
-        customView.setBackgroundColor(0xFFFF0000);
+        customView.setBackgroundColor(getResources().getColor(R.color.custom_view_background));
         ActionBar ab = getSupportActionBar();
         ab.setCustomView(customView);
         ab.setDisplayShowTitleEnabled(false);

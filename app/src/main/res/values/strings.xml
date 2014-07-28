@@ -28,5 +28,6 @@
     <string name="list_item_selected_format">Item with position %d selected</string>
     <string name="action_search">Search</string>
     <string name="search_hint">Google Search</string>
+    <string name="search_query_format">https://google.com/search?q=%s</string>
 
 </resources>

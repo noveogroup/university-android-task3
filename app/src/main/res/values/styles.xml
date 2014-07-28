@@ -15,4 +15,6 @@
         <item name="background">@drawable/action_bar_background</item>
     </style>
 
+    <color name="custom_view_background">#f00</color>
+
 </resources>
