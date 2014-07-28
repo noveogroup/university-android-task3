@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.noveogroup.task3.ActionView" >
+
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/search_ic"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+
+
+    <item android:id="@+id/hello_item"
+        android:title="@string/hello"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/world_item"
+        android:title="@string/world"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/about_item"
+        android:title="@string/about"
+        app:showAsAction="never" />
+
+</menu>

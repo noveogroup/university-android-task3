@@ -16,6 +16,57 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SimpleActionBar"
+            android:label="@string/title_activity_simple_action_bar"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".SimpleUpBar"
+            android:label="@string/title_activity_simple_up_bar"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".SplitActionBar"
+            android:label="@string/title_activity_split_action_bar"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name=".NavigationTabs"
+            android:label="@string/title_activity_navigation_tabs"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".NavigationList"
+            android:label="@string/title_activity_navigation_list"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".CustomView"
+            android:label="@string/title_activity_custom_view"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".CustomTheme"
+            android:label="@string/title_activity_custom_theme"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/Theme.Customtheme" >
+        </activity>
+        <activity
+            android:name=".ActionView"
+            android:label="@string/title_activity_action_view"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/Theme.Customtheme">
+        </activity>
     </application>
 
 </manifest>

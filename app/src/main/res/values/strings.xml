@@ -3,7 +3,6 @@
 
     <string name="app_name">Task3</string>
     <string name="dragon">Hey you! I\'m a Dragon!</string>
-
     <string name="simple">Simple Action bar</string>
     <string name="simple_up">Simple Action bar + Up button</string>
     <string name="split">Split Action bar</string>
@@ -12,5 +11,28 @@
     <string name="custom">Action bar with Custom view</string>
     <string name="themed">Action bar with custom theme</string>
     <string name="action">Action bar with Action view</string>
+    <string name="title_activity_simple_action_bar">SimpleActionBar</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hello</string>
+    <string name="world">World</string>
+    <string name="about">About</string>
+    <string name="title_activity_simple_up_bar">SimpleUpBar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_split_action_bar">SplitActionBar</string>
+    <string name="title_activity_navigation_tabs">NavigationTabs</string>
+    <string name="video">Video</string>
+    <string name="music">Music</string>
+    <string name="images">Images</string>
+
+    <string-array name="categories">
+        <item>@string/video</item>
+        <item>@string/music</item>
+        <item>@string/images</item>
+    </string-array>
+
+    <string name="title_activity_navigation_list">NavigationList</string>
+    <string name="title_activity_custom_view">CustomView</string>
+    <string name="title_activity_custom_theme">CustomTheme</string>
+    <string name="title_activity_action_view">ActionView</string>
 
 </resources>

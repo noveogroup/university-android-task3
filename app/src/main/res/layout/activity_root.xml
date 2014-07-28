@@ -15,52 +15,52 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/simple_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/simple"
-            android:onClick="dummy"/>
+            android:text="@string/simple" />
 
         <Button
+            android:id="@+id/simple_up_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/simple_up"
-            android:onClick="dummy"/>
+            android:text="@string/simple_up" />
 
         <Button
+            android:id="@+id/split_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/split"
-            android:onClick="dummy"/>
+            android:text="@string/split" />
 
         <Button
+            android:id="@+id/navigation_tabs_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tabs"
-            android:onClick="dummy"/>
+            android:text="@string/tabs" />
 
         <Button
+            android:id="@+id/navigation_list_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/list"
-            android:onClick="dummy"/>
+            android:text="@string/list" />
 
         <Button
+            android:id="@+id/custom_view_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/custom"
-            android:onClick="dummy"/>
+            android:text="@string/custom" />
 
         <Button
+            android:id="@+id/custom_theme_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/themed"
-            android:onClick="dummy"/>
+            android:text="@string/themed" />
 
         <Button
+            android:id="@+id/action_view_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/action"
-            android:onClick="dummy"/>
+            android:text="@string/action" />
 
     </LinearLayout>
 </ScrollView>
