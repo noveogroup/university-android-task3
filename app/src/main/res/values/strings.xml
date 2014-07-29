@@ -3,7 +3,6 @@
 
     <string name="app_name">Task3</string>
     <string name="dragon">Hey you! I\'m a Dragon!</string>
-
     <string name="simple">Simple Action bar</string>
     <string name="simple_up">Simple Action bar + Up button</string>
     <string name="split">Split Action bar</string>
@@ -12,5 +11,32 @@
     <string name="custom">Action bar with Custom view</string>
     <string name="themed">Action bar with custom theme</string>
     <string name="action">Action bar with Action view</string>
+    <string name="title_activity_simple">SimpleActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_action_bar_with_up_button">ActionBarWithUpButton</string>
+    <string name="title_activity_split_action_bar">SplitActionBar</string>
+    <string name="test_menu_item">test</string>
+    <string name="title_activity_action_bar_with_tabs">ActionBarWithTabs</string>
+    <string name="title_activity_action_bar_with_navigation_list">ActionBarWithNavigationList</string>
+    <string name="actionbar_cheese">Cheese</string>
+    <string name="actionbar_tomato">Tomato</string>
+    <string name="actionbar_olives">Olives</string>
+    <string name="actionbar_anchovies">Anchovies</string>
+    <string name="actionbar_question">What would you like to eat now?</string>
+    <string name="good_choice">Mmm, Goood choice!</string>
+    <string name="actionbar_action_view_title">DO ACTION!</string>
+    <string name="action_search">Search</string>
+
+    <string-array name="action_list">
+        <item>Chicken</item>
+        <item>Beef</item>
+        <item>Pork</item>
+    </string-array>
+
+    <string name="title_activity_action_bar_with_custom_view">ActionBarWithCustomView</string>
+    <string name="title_activity_action_bar_with_custom_theme">ActionBarWithCustomTheme</string>
+    <string name="title_activity_action_bar_with_action_view">ActionBarWithActionView</string>
 
 </resources>
