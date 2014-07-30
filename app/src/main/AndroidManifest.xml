@@ -17,9 +17,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SimpleActionBarActivity"
-            android:label="@string/title_activity_simple_action_bar" >
-        </activity>
-    </application>
+			android:name=".SimpleActionBarActivity">
+		</activity>
+		<activity
+			android:name=".UpActionBarActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.noveogroup.task3.RootActivity"/>
+		</activity>
+	</application>
 
 </manifest>

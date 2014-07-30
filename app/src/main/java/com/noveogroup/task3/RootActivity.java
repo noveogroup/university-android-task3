@@ -19,6 +19,10 @@ public class RootActivity extends ActionBarActivity {
 		startActivity(new Intent(this, SimpleActionBarActivity.class));
 	}
 
+	public void upActionBarBtn(View view) {
+		startActivity(new Intent(this, UpActionBarActivity.class));
+	}
+
     public void dummy(View view) {
         Toast.makeText(this, R.string.dragon, Toast.LENGTH_SHORT).show();
     }
