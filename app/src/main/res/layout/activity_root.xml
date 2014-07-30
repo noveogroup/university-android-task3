@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/simple"
-            android:onClick="dummy"/>
+            android:onClick="simpleActionBarBtn"/>
 
         <Button
             android:layout_width="match_parent"
