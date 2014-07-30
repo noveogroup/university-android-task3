@@ -36,31 +36,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tabs"
-            android:onClick="dummy"/>
+            android:onClick="startTabsActivity"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/list"
-            android:onClick="dummy"/>
+            android:onClick="startListActivity"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/custom"
-            android:onClick="dummy"/>
+            android:onClick="startViewActivity"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/themed"
-            android:onClick="dummy"/>
+            android:onClick="startThemedActivity"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/action"
-            android:onClick="dummy"/>
+            android:onClick="startActionActivity"/>
 
     </LinearLayout>
 </ScrollView>

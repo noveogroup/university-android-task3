@@ -49,6 +49,63 @@
                 android:value="splitActionBarWhenNarrow"
                 />
         </activity>
+
+        <activity
+            android:name=".TabsActivity"
+            android:label="@string/tabs"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/ActionBarActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RootActivity"
+                />
+        </activity>
+
+        <activity
+            android:name=".ListActivity"
+            android:label="@string/list"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/ActionBarActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RootActivity"
+                />
+        </activity>
+
+        <activity
+            android:name=".ViewActivity"
+            android:label="@string/custom"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/ActionBarActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RootActivity"
+                />
+        </activity>
+
+        <activity
+            android:name=".ThemedActivity"
+            android:label="@string/themed"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/ActionBarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RootActivity"
+                />
+        </activity>
+
+        <activity
+            android:name=".ActionActivity"
+            android:label="@string/action"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/ActionBarActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RootActivity"
+                />
+        </activity>
     </application>
+
+
 
 </manifest>

@@ -1,14 +1,13 @@
 package com.noveogroup.task3;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 
-public final class UpActivity extends ActionBarActivity {
+public final class UpActivity extends BaseActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_blank);
+        setContentView(R.layout.activity_blank_layout);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

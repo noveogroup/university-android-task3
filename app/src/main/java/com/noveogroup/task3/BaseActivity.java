@@ -18,9 +18,6 @@ public class BaseActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
-            case R.id.action_search:
-                Toast.makeText(this, "Sorry, nothing's found.", Toast.LENGTH_SHORT).show();
-                return true;
             case R.id.action_attention:
                 Toast.makeText(this, "Attention, please! You are in activity with action bar.",
                                Toast.LENGTH_SHORT).show();

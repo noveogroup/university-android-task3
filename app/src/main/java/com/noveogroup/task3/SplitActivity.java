@@ -7,7 +7,7 @@ public final class SplitActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_blank);
+        setContentView(R.layout.activity_blank_layout);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
