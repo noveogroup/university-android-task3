@@ -18,19 +18,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/simple"
-            android:onClick="dummy"/>
+            android:onClick="startSimpleActivity"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/simple_up"
-            android:onClick="dummy"/>
+            android:onClick="startUpActivity"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/split"
-            android:onClick="dummy"/>
+            android:onClick="startSplitActivity"/>
 
         <Button
             android:layout_width="match_parent"

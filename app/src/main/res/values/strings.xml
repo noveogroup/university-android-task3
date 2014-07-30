@@ -13,4 +13,13 @@
     <string name="themed">Action bar with custom theme</string>
     <string name="action">Action bar with Action view</string>
 
+    <string name="show_action_bar">Show AB</string>
+    <string name="hide_action_bar">Hide AB</string>
+
+    <string name="action_search_title">Search for something</string>
+    <string name="action_attention_title">Read important message</string>
+    <string name="action_battery_title">Check battery state</string>
+    <string name="action_question_title">Show a question</string>
+
+
 </resources>

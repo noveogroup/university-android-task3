@@ -16,6 +16,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".SimpleActivity"
+            android:label="@string/simple"
+            android:theme="@style/ActionBarActivityTheme">
+        </activity>
+
+        <activity
+            android:name=".UpActivity"
+            android:label="@string/simple_up"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/ActionBarActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RootActivity"
+                />
+        </activity>
+
+        <activity
+            android:name=".SplitActivity"
+            android:label="@string/split"
+            android:parentActivityName=".RootActivity"
+            android:theme="@style/ActionBarActivityTheme"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RootActivity"
+                />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow"
+                />
+        </activity>
     </application>
 
 </manifest>
