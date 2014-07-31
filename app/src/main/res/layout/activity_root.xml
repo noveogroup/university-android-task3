@@ -36,9 +36,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tabs"
-            android:onClick="dummy"/>
+			android:onClick="navigationTabsActionBarBtn"/>
 
-        <Button
+		<Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/list"

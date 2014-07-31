@@ -18,6 +18,12 @@
 	<string name="action_search">Search</string>
 	<string name="action_clear">Clear</string>
 	<string name="action_go">Go</string>
+	<string name="tab1_text">Tab #1</string>
+	<string name="tab2_text">Second tab</string>
+	<string name="tab3_text">3rd tab</string>
+	<string name="tab4_text">4444</string>
+	<string name="tab_select_text">You selected \"%s\"</string>
+	<string name="tab_reselect_text">You accidentally selected \"%s\" again. What a waste! You\'ll never get these precious seconds back!</string>
 
 
 </resources>

@@ -5,9 +5,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-/**
- * Created by Admin on 31.07.2014.
- */
 public class Task2ActionBarActivity extends ActionBarActivity {
 
 	@Override

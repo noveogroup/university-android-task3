@@ -27,6 +27,10 @@ public class RootActivity extends ActionBarActivity {
 		startActivity(new Intent(this, SplitActionBarActivity.class));
 	}
 
+	public void navigationTabsActionBarBtn(View view) {
+		startActivity(new Intent(this, NavigationTabsActionBarActivity.class));
+	}
+
 	public void dummy(View view) {
 		Toast.makeText(this, R.string.dragon, Toast.LENGTH_SHORT).show();
 	}
