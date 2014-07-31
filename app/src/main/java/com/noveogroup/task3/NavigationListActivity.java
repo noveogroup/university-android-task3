@@ -13,6 +13,10 @@ public class NavigationListActivity extends ActionBarActivity implements ActionB
     private ActionBar actionBar;
     private TextView info;
 
+    private int position = 0;
+
+    public static final String KEY_LIST_POSITION = "com.noveogroup.task3.list_position";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +32,16 @@ public class NavigationListActivity extends ActionBarActivity implements ActionB
         actionBar.setListNavigationCallbacks(adapter, this);
     }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        position = savedInstanceState.getInt(KEY_LIST_POSITION);
+        actionBar.setSelectedNavigationItem(position);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt(KEY_LIST_POSITION, actionBar.getSelectedNavigationIndex());
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -59,7 +73,7 @@ public class NavigationListActivity extends ActionBarActivity implements ActionB
 
     @Override
     public boolean onNavigationItemSelected(int itemPosition, long itemId) {
-        info.setText("Selected item with itemPosition = " + itemPosition + " and itemId = " + itemId);
+        info.setText(getString(R.string.text_list_item_selected, itemPosition));
         return true;
     }
 }

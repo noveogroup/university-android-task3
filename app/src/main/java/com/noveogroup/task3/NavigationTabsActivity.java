@@ -13,6 +13,9 @@ import android.widget.Toast;
 public class NavigationTabsActivity extends ActionBarActivity implements ActionBar.TabListener {
     private ActionBar actionBar;
     private TextView info;
+    public static final String KEY_TAB_POSITION = "com.noveogroup.task3.tab_position";
+
+    private int position = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,17 @@ public class NavigationTabsActivity extends ActionBarActivity implements ActionB
             tab.setTabListener(this);
             actionBar.addTab(tab);
         }
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        position = savedInstanceState.getInt(KEY_TAB_POSITION);
+        actionBar.setSelectedNavigationItem(position);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt(KEY_TAB_POSITION, actionBar.getSelectedNavigationIndex());
     }
 
     @Override
@@ -73,13 +87,13 @@ public class NavigationTabsActivity extends ActionBarActivity implements ActionB
 
     @Override
     public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-        String toastText = String.format("%s %s", getString(R.string.toast_text_tab_unselected), tab.getText().toString());
+        String toastText = getString(R.string.toast_text_tab_unselected, tab.getText().toString());
         Toast.makeText(this, toastText,Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-        String toastText = String.format("%s %s %s", getString(R.string.toast_text_tab_reselected_begin), tab.getText().toString(), getString(R.string.toast_text_tab_reselected_end));
+        String toastText = getString(R.string.toast_text_tab_reselected, tab.getText());
         Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show();
     }
 }

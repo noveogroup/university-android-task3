@@ -40,8 +40,8 @@
     <string name="toast_text_hello">This is Hello item</string>
     <string name="toast_text_world">This is World item</string>
     <string name="toast_text_about">This is About item</string>
-    <string name="toast_text_tab_unselected">Out in with tab</string>
-    <string name="toast_text_tab_reselected_begin">Tab</string>
-    <string name="toast_text_tab_reselected_end">selected again</string>
+    <string name="toast_text_tab_unselected">Out in with tab %s</string>
+    <string name="toast_text_tab_reselected">Tab %s selected again</string>
+    <string name="text_list_item_selected">Selected item with itemPosition = %s</string>
 
 </resources>
