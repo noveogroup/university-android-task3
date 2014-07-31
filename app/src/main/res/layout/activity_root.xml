@@ -30,9 +30,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/split"
-            android:onClick="dummy"/>
+			android:onClick="splitActionBarBtn"/>
 
-        <Button
+		<Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tabs"
