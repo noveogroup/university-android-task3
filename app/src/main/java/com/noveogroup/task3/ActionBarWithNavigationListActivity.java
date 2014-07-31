@@ -9,9 +9,17 @@ import android.widget.Toast;
 
 public class ActionBarWithNavigationListActivity extends ActionBarActivity {
 
+    private int currentTab = 0;
+    private static final String STATE_CURRENT_TAB = "STATE_CURRENT_TAB";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (savedInstanceState != null) {
+            currentTab = savedInstanceState.getInt(STATE_CURRENT_TAB);
+        }
+
         setContentView(R.layout.activity_root);
 
         SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this,
@@ -29,10 +37,18 @@ public class ActionBarWithNavigationListActivity extends ActionBarActivity {
 
                 Toast toast = Toast.makeText(getApplicationContext(), strings[position], Toast.LENGTH_SHORT);
                 toast.show();
+                currentTab = position;
                 return true;
             }
         };
 
         actionBar.setListNavigationCallbacks(mSpinnerAdapter, mOnNavigationListener);
+        actionBar.setSelectedNavigationItem(currentTab);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putInt(STATE_CURRENT_TAB, currentTab);
+        super.onSaveInstanceState(savedInstanceState);
     }
 }

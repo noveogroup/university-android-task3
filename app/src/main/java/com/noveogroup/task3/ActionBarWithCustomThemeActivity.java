@@ -10,9 +10,17 @@ import android.widget.Toast;
 
 public class ActionBarWithCustomThemeActivity extends ActionBarActivity {
 
+    private int currentTab = 0;
+    private static final String STATE_CURRENT_TAB = "STATE_CURRENT_TAB";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (savedInstanceState != null) {
+            currentTab = savedInstanceState.getInt(STATE_CURRENT_TAB);
+        }
+
         setContentView(R.layout.activity_root);
 
         // setup action bar for tabs
@@ -20,11 +28,28 @@ public class ActionBarWithCustomThemeActivity extends ActionBarActivity {
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setDisplayShowTitleEnabled(false);
 
+        createTab(actionBar, getResources().getString(R.string.actionbar_cheese), 0);
+        createTab(actionBar, getResources().getString(R.string.actionbar_tomato), 1);
+
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setSelectedNavigationItem(currentTab);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    private void createTab(ActionBar actionBar, String text, int position) {
         ActionBar.TabListener tabListener = new ActionBar.TabListener() {
             @Override
             public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
                 Toast toast = Toast.makeText(getApplicationContext(), tab.getText(), Toast.LENGTH_SHORT);
                 toast.show();
+                currentTab = tab.getPosition();
             }
 
             @Override
@@ -39,23 +64,15 @@ public class ActionBarWithCustomThemeActivity extends ActionBarActivity {
         };
 
         ActionBar.Tab tab = actionBar.newTab()
-                .setText(R.string.actionbar_cheese)
+                .setText(text)
                 .setTabListener(tabListener);
-        actionBar.addTab(tab);
-
-        tab = actionBar.newTab()
-                .setText(R.string.actionbar_tomato)
-                .setTabListener(tabListener);
-        actionBar.addTab(tab);
-
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.addTab(tab, position, false);
     }
 
+
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu items for use in the action bar
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putInt(STATE_CURRENT_TAB, currentTab);
+        super.onSaveInstanceState(savedInstanceState);
     }
 }

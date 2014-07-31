@@ -17,8 +17,9 @@
         android:layout_height="wrap_content"
         android:text="@string/simple_up"/>
 
+    <!--split_action_bar crush application-->
     <Button
-        android:id="@+id/split_action_bar"
+        android:id="@+id/split_action_bar_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/split"/>
@@ -52,5 +53,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/action"/>
-
 </LinearLayout>
