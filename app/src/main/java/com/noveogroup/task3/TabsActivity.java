@@ -17,9 +17,9 @@ public final class TabsActivity extends BaseActivity {
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-        for(int i = 1; i < 11; ++i) {
+        for(int i = 1; i < getResources().getInteger(R.integer.tabs_quantity); ++i) {
             ActionBar.Tab newTab = actionBar.newTab()
-                    .setText("Tab " + i)
+                    .setText(getString(R.string.tab_name) + i)
                     .setTabListener(new ActionBar.TabListener() {
                         private TextFragment textFragment;
 
@@ -28,8 +28,8 @@ public final class TabsActivity extends BaseActivity {
                                                   FragmentTransaction fragmentTransaction) {
 
                             if(textFragment == null) {
-                                textFragment = TextFragment.newInstance(tab.getText()
-                                                                        + " and some more text.");
+                                textFragment = TextFragment.newInstance(getString(
+                                                          R.string.some_more_text, tab.getText()));
                                 fragmentTransaction.replace(android.R.id.content, textFragment);
                             }
                             else {

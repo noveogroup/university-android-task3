@@ -19,14 +19,13 @@ public class BaseActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.action_attention:
-                Toast.makeText(this, "Attention, please! You are in activity with action bar.",
-                               Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.action_attention_result, Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_battery:
-                Toast.makeText(this, "The battery is Ok.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.action_battery_result, Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_question:
-                Toast.makeText(this, "What's up, Doc?", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.action_question_result, Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return  super.onOptionsItemSelected(menuItem);

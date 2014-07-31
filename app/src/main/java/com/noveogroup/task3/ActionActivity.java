@@ -22,7 +22,7 @@ public final class ActionActivity extends BaseActivity {
 
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView =(SearchView) MenuItemCompat.getActionView(searchItem);
-        searchView.setQueryHint("Search...");
+        searchView.setQueryHint(getString(R.string.search_query_hint));
         return super.onCreateOptionsMenu(menu);
     }
 }

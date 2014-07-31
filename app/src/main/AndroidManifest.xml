@@ -20,14 +20,14 @@
         <activity
             android:name=".SimpleActivity"
             android:label="@string/simple"
-            android:theme="@style/ActionBarActivityTheme">
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         </activity>
 
         <activity
             android:name=".UpActivity"
             android:label="@string/simple_up"
             android:parentActivityName=".RootActivity"
-            android:theme="@style/ActionBarActivityTheme">
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".RootActivity"
@@ -38,7 +38,7 @@
             android:name=".SplitActivity"
             android:label="@string/split"
             android:parentActivityName=".RootActivity"
-            android:theme="@style/ActionBarActivityTheme"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:uiOptions="splitActionBarWhenNarrow">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -54,7 +54,7 @@
             android:name=".TabsActivity"
             android:label="@string/tabs"
             android:parentActivityName=".RootActivity"
-            android:theme="@style/ActionBarActivityTheme">
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".RootActivity"
@@ -65,7 +65,7 @@
             android:name=".ListActivity"
             android:label="@string/list"
             android:parentActivityName=".RootActivity"
-            android:theme="@style/ActionBarActivityTheme">
+            android:theme="@style/ListActionBarTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".RootActivity"
@@ -76,7 +76,7 @@
             android:name=".ViewActivity"
             android:label="@string/custom"
             android:parentActivityName=".RootActivity"
-            android:theme="@style/ActionBarActivityTheme">
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".RootActivity"
@@ -87,7 +87,7 @@
             android:name=".ThemedActivity"
             android:label="@string/themed"
             android:parentActivityName=".RootActivity"
-            android:theme="@style/ActionBarTheme">
+            android:theme="@style/SimpleActionBarTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".RootActivity"
@@ -98,7 +98,7 @@
             android:name=".ActionActivity"
             android:label="@string/action"
             android:parentActivityName=".RootActivity"
-            android:theme="@style/ActionBarActivityTheme">
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".RootActivity"

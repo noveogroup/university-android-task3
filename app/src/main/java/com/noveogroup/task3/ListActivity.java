@@ -27,8 +27,8 @@ public final class ListActivity extends BaseActivity {
 
             @Override
             public boolean onNavigationItemSelected(int position, long itemId) {
-                TextFragment newFragment = TextFragment.newInstance(items[position]
-                                                                          + " and some more text.");
+                TextFragment newFragment = TextFragment.newInstance(getString(
+                                                        R.string.some_more_text, items[position]));
                 FragmentTransaction fragmentTransaction
                                                   = getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(android.R.id.content, newFragment);

@@ -20,6 +20,15 @@
     <string name="action_attention_title">Read important message</string>
     <string name="action_battery_title">Check battery state</string>
     <string name="action_question_title">Show a question</string>
+    <string name="action_attention_result">Attention, please!
+                                           You are in activity with action bar.</string>
+    <string name="action_battery_result">The battery is Ok.</string>
+    <string name="action_question_result">What\'s up, Doc?</string>
+
+    <string name="search_query_hint">Search</string>
+    <string name="some_more_text">%1$s and some more text.</string>
+    <string name="tab_name">Tab </string>
+    <string name="custom_text">Custom text view</string>
 
 
 </resources>

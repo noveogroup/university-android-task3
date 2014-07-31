@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ListActionBarTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionDropDownStyle">@style/ListDropDown</item>
+        <item name="android:actionBarStyle">@style/ListActionBar</item>
+        <item name="actionBarStyle">@style/ListActionBar</item>
+        <item name="actionDropDownStyle">@style/ListDropDown</item>
+    </style>
+
+    <style name="SimpleActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/SimpleActionBar</item>
+        <item name="actionBarStyle">@style/SimpleActionBar</item>
+    </style>
+
+</resources>

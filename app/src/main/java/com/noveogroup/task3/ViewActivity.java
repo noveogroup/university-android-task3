@@ -13,7 +13,7 @@ public final class ViewActivity extends BaseActivity {
         setContentView(R.layout.activity_blank_layout);
 
         TextView textView = new TextView(this);
-        textView.setHint("Custom text view");
+        textView.setHint(getString(R.string.custom_text));
         ActionBar actionBar = getSupportActionBar();
         actionBar.setCustomView(textView);
         actionBar.setDisplayShowCustomEnabled(true);

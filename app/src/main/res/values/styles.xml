@@ -1,10 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
-        <item name="android:windowNoTitle">true</item>
+    <style name="SimpleActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/simple_action_bar_background</item>
+        <item name="android:titleTextStyle">@style/SimpleTitleText</item>
+        <item name="titleTextStyle">@style/SimpleTitleText</item>
     </style>
 
-    <style name="ActionBarActivityTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="SimpleTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ListDropDown" parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:popupBackground">@drawable/list_action_bar_popup_background</item>
+    </style>
+
+    <style name="ListActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/list_action_bar_background</item>
+    </style>
 
 </resources>
