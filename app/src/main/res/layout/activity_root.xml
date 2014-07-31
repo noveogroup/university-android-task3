@@ -10,7 +10,7 @@
     tools:context=".RootActivity">
 
     <fragment
-        android:name="com.noveogroup.task3.BlankFragment"
+        android:name="com.noveogroup.task3.ButtonsFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

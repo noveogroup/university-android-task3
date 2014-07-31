@@ -7,7 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
 
-public class ActionBarWithNavigationList extends ActionBarActivity {
+public class ActionBarWithNavigationListActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

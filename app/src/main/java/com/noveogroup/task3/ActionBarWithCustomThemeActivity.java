@@ -3,11 +3,12 @@ package com.noveogroup.task3;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.Toast;
 
-public class ActionBarWithTabs extends ActionBarActivity {
+public class ActionBarWithCustomThemeActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,23 +22,23 @@ public class ActionBarWithTabs extends ActionBarActivity {
 
         ActionBar.TabListener tabListener = new ActionBar.TabListener() {
             @Override
-            public void onTabSelected(Tab tab, FragmentTransaction fragmentTransaction) {
+            public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
                 Toast toast = Toast.makeText(getApplicationContext(), tab.getText(), Toast.LENGTH_SHORT);
                 toast.show();
             }
 
             @Override
-            public void onTabUnselected(Tab tab, FragmentTransaction fragmentTransaction) {
+            public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
 
             }
 
             @Override
-            public void onTabReselected(Tab tab, FragmentTransaction fragmentTransaction) {
+            public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
 
             }
         };
 
-        Tab tab = actionBar.newTab()
+        ActionBar.Tab tab = actionBar.newTab()
                 .setText(R.string.actionbar_cheese)
                 .setTabListener(tabListener);
         actionBar.addTab(tab);
@@ -46,5 +47,15 @@ public class ActionBarWithTabs extends ActionBarActivity {
                 .setText(R.string.actionbar_tomato)
                 .setTabListener(tabListener);
         actionBar.addTab(tab);
+
+        actionBar.setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }

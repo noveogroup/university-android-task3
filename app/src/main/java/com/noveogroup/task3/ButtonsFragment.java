@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class BlankFragment extends Fragment {
+public class ButtonsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -18,7 +18,7 @@ public class BlankFragment extends Fragment {
         view.findViewById(R.id.simple_actionbar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), SimpleActionBar.class);
+                Intent intent = new Intent(getActivity(), SimpleActionBarActivity.class);
                 startActivity(intent);
             }
         });
@@ -26,7 +26,7 @@ public class BlankFragment extends Fragment {
         view.findViewById(R.id.simple_actionbar_with_upbutton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ActionBarWithUpButton.class);
+                Intent intent = new Intent(getActivity(), ActionBarWithUpButtonActivity.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,7 @@ public class BlankFragment extends Fragment {
         view.findViewById(R.id.split_action_bar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), SplitActionBar.class);
+                Intent intent = new Intent(getActivity(), SplitActionBarActivity.class);
                 startActivity(intent);
             }
         });
@@ -42,7 +42,7 @@ public class BlankFragment extends Fragment {
         view.findViewById(R.id.actionbar_with_tabs).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ActionBarWithTabs.class);
+                Intent intent = new Intent(getActivity(), ActionBarWithTabsActivity.class);
                 startActivity(intent);
             }
         });
@@ -50,7 +50,7 @@ public class BlankFragment extends Fragment {
         view.findViewById(R.id.actionbar_with_navigation_list).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ActionBarWithNavigationList.class);
+                Intent intent = new Intent(getActivity(), ActionBarWithNavigationListActivity.class);
                 startActivity(intent);
             }
         });
@@ -58,7 +58,7 @@ public class BlankFragment extends Fragment {
         view.findViewById(R.id.actionbar_with_custom_view).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ActionBarWithCustomView.class);
+                Intent intent = new Intent(getActivity(), ActionBarWithCustomViewActivity.class);
                 startActivity(intent);
             }
         });
@@ -66,7 +66,7 @@ public class BlankFragment extends Fragment {
         view.findViewById(R.id.actionbar_with_custom_theme).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ActionBarWithCustomTheme.class);
+                Intent intent = new Intent(getActivity(), ActionBarWithCustomThemeActivity.class);
                 startActivity(intent);
             }
         });
@@ -74,7 +74,7 @@ public class BlankFragment extends Fragment {
         view.findViewById(R.id.actionbar_with_action_view).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ActionBarWithActionView.class);
+                Intent intent = new Intent(getActivity(), ActionBarWithActionViewActivity.class);
                 startActivity(intent);
             }
         });

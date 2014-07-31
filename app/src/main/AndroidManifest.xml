@@ -17,17 +17,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SimpleActionBar"
+            android:name=".SimpleActionBarActivity"
             android:label="@string/title_activity_simple"
             android:theme="@style/Theme.AppCompat.Light" >
         </activity>
         <activity
-            android:name=".ActionBarWithUpButton"
+            android:name=".ActionBarWithUpButtonActivity"
             android:label="@string/title_activity_action_bar_with_up_button"
             android:theme="@style/Theme.AppCompat.Light" >
         </activity>
         <activity
-            android:name=".SplitActionBar"
+            android:name=".SplitActionBarActivity"
             android:label="@string/title_activity_split_action_bar"
             android:theme="@style/Theme.AppCompat.Light"
             android:uiOptions="splitActionBarWhenNarrow" >
@@ -36,22 +36,22 @@
                 android:value="splitActionBarWhenNarrow" />
         </activity>
         <activity
-            android:name=".ActionBarWithTabs"
+            android:name=".ActionBarWithTabsActivity"
             android:label="@string/title_activity_action_bar_with_tabs"
             android:theme="@style/Theme.AppCompat.Light" >
         </activity>
         <activity
-            android:name=".ActionBarWithNavigationList"
+            android:name=".ActionBarWithNavigationListActivity"
             android:label="@string/title_activity_action_bar_with_navigation_list"
             android:theme="@style/Theme.AppCompat.Light" >
         </activity>
         <activity
-            android:name=".ActionBarWithCustomView"
+            android:name=".ActionBarWithCustomViewActivity"
             android:label="@string/title_activity_action_bar_with_custom_view"
             android:theme="@style/Theme.AppCompat.Light" >
         </activity>
         <activity
-            android:name=".ActionBarWithCustomTheme"
+            android:name=".ActionBarWithCustomThemeActivity"
             android:label="@string/title_activity_action_bar_with_custom_theme"
             android:theme="@style/Theme.Supertheme"
             android:uiOptions="splitActionBarWhenNarrow" >
@@ -60,7 +60,7 @@
                 android:value="splitActionBarWhenNarrow" />
         </activity>
         <activity
-            android:name=".ActionBarWithActionView"
+            android:name=".ActionBarWithActionViewActivity"
             android:label="@string/title_activity_action_bar_with_action_view"
             android:theme="@style/Theme.AppCompat.Light">
         </activity>

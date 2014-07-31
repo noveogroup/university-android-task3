@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
-public class ActionBarWithActionView extends ActionBarActivity {
+public class ActionBarWithActionViewActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
