@@ -34,6 +34,9 @@
 		<activity
 			android:name=".NavigationTabsActionBarActivity">
 		</activity>
+		<activity
+			android:name=".NavigationListActionBarActivity">
+		</activity>
 	</application>
 
 </manifest>
