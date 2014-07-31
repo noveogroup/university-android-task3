@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|fill_horizontal" >
+
+        <EditText
+            android:id="@+id/search_query"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:background="@color/search_background"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:hint="@string/custom_search_hint"/>
+    </FrameLayout>
+
+</RelativeLayout>
