@@ -37,6 +37,12 @@
 		<activity
 			android:name=".NavigationListActionBarActivity">
 		</activity>
+		<activity
+			android:name=".CustomViewActionBarActivity">
+			<meta-data
+				android:name="android.support.UI_OPTIONS"
+				android:value="splitActionBarWhenNarrow"/>
+		</activity>
 	</application>
 
 </manifest>

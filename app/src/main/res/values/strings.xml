@@ -13,7 +13,7 @@
     <string name="action">Action bar with Action view</string>
     <string name="title_activity_simple_action_bar">SimpleActionBarActivity</string>
     <string name="hello_world">Hello world!</string>
-	<string name="unavailable">For some reason option \"%s\" is unavailable</string>
+	<string name="unavailable">Option \"%s\" is unavailable. Because of reasons.</string>
 	<string name="action_settings">Settings</string>
 	<string name="action_search">Search</string>
 	<string name="action_clear">Clear</string>
@@ -25,6 +25,8 @@
 	<string name="tab_select_text">You selected \"%s\"</string>
 	<string name="tab_reselect_text">You accidentally selected \"%s\" again. What a waste! You\'ll never get these precious seconds back!</string>
 	<string name="nav_item_selected">You selected option №%d</string>
+	<string name="write_btn">Show</string>
+	<string name="input_text_string">Input text</string>
 
 
 </resources>
