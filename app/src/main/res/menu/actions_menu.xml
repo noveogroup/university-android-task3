@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/action_attention"
+        android:icon="@drawable/ic_action_warning"
+        android:title="@string/action_attention_title"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_battery"
+        android:icon="@drawable/ic_action_battery"
+        android:title="@string/action_battery_title"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_question"
+        android:icon="@drawable/ic_action_help"
+        android:title="@string/action_question_title"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>
