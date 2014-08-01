@@ -12,23 +12,7 @@ public class Task2ActionBarActivity extends ActionBarActivity {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		switch (id) {
-			case R.id.action_go:
-				Toast.makeText(this, getString(R.string.unavailable, getString(R.string.action_go)), Toast.LENGTH_SHORT).show();
-				break;
-			case R.id.action_search:
-				Toast.makeText(this, getString(R.string.unavailable, getString(R.string.action_search)), Toast.LENGTH_SHORT).show();
-				break;
-			case R.id.action_clear:
-				Toast.makeText(this, getString(R.string.unavailable, getString(R.string.action_clear)), Toast.LENGTH_SHORT).show();
-				break;
-			case R.id.action_settings:
-				Toast.makeText(this, getString(R.string.unavailable, getString(R.string.action_settings)), Toast.LENGTH_SHORT).show();
-				break;
-			default:
-				return super.onOptionsItemSelected(item);
-		}
+		Toast.makeText(this, getString(R.string.unavailable, item.getTitle()), Toast.LENGTH_SHORT).show();
 		return true;
 	}
 

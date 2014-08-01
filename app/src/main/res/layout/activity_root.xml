@@ -54,9 +54,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/themed"
-            android:onClick="dummy"/>
+			android:onClick="customThemeActionBarBtn"/>
 
-        <Button
+		<Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/action"

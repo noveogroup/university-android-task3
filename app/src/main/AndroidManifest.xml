@@ -43,6 +43,11 @@
 				android:name="android.support.UI_OPTIONS"
 				android:value="splitActionBarWhenNarrow"/>
 		</activity>
+		<activity
+			android:name=".CustomThemeActionBarActivity"
+
+			android:theme="@style/MyTheme">
+		</activity>
 	</application>
 
 </manifest>
