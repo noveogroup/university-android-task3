@@ -17,7 +17,7 @@ public final class TabsActivity extends BaseActivity {
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-        for(int i = 1; i < getResources().getInteger(R.integer.tabs_quantity); ++i) {
+        for(int i = 1; i < getResources().getInteger(R.integer.tabs_quantity_minus_one); ++i) {
             ActionBar.Tab newTab = actionBar.newTab()
                     .setText(getString(R.string.tab_name) + i)
                     .setTabListener(new ActionBar.TabListener() {
