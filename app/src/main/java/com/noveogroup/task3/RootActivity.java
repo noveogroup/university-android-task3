@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 
 public class RootActivity extends ActionBarActivity {
@@ -43,7 +42,7 @@ public class RootActivity extends ActionBarActivity {
 		startActivity(new Intent(this, CustomThemeActionBarActivity.class));
 	}
 
-	public void dummy(View view) {
-		Toast.makeText(this, R.string.dragon, Toast.LENGTH_SHORT).show();
+	public void actionViewActionBarBtn(View view) {
+		startActivity(new Intent(this, ActionViewActionBarActivity.class));
 	}
 }

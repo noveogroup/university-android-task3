@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/action"
-            android:onClick="dummy"/>
+			android:onClick="actionViewActionBarBtn"/>
 
-    </LinearLayout>
+	</LinearLayout>
 </ScrollView>

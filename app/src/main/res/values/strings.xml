@@ -27,6 +27,7 @@
 	<string name="nav_item_selected">You selected option №%d</string>
 	<string name="write_btn">Show</string>
 	<string name="input_text_string">Input text</string>
+	<string name="cant_search">Invalid search query: \"%s\"</string>
 
 
 </resources>
