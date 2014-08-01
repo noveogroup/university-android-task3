@@ -18,49 +18,49 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/simple"
-            android:onClick="dummy"/>
+            android:onClick="simpleActionBarBtn"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/simple_up"
-            android:onClick="dummy"/>
+			android:onClick="upActionBarBtn"/>
 
-        <Button
+		<Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/split"
-            android:onClick="dummy"/>
+			android:onClick="splitActionBarBtn"/>
 
-        <Button
+		<Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tabs"
-            android:onClick="dummy"/>
+			android:onClick="navigationTabsActionBarBtn"/>
 
-        <Button
+		<Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/list"
-            android:onClick="dummy"/>
+			android:onClick="navigationListActionBarBtn"/>
 
-        <Button
+		<Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/custom"
-            android:onClick="dummy"/>
+			android:onClick="customViewActionBarBtn"/>
 
-        <Button
+		<Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/themed"
-            android:onClick="dummy"/>
+			android:onClick="customThemeActionBarBtn"/>
 
-        <Button
+		<Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/action"
-            android:onClick="dummy"/>
+			android:onClick="actionViewActionBarBtn"/>
 
-    </LinearLayout>
+	</LinearLayout>
 </ScrollView>

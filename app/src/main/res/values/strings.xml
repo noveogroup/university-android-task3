@@ -3,7 +3,6 @@
 
     <string name="app_name">Task3</string>
     <string name="dragon">Hey you! I\'m a Dragon!</string>
-
     <string name="simple">Simple Action bar</string>
     <string name="simple_up">Simple Action bar + Up button</string>
     <string name="split">Split Action bar</string>
@@ -12,5 +11,25 @@
     <string name="custom">Action bar with Custom view</string>
     <string name="themed">Action bar with custom theme</string>
     <string name="action">Action bar with Action view</string>
+    <string name="title_activity_simple_action_bar">SimpleActionBarActivity</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="unavailable">Option \"%s\" is unavailable. Because of reasons.</string>
+	<string name="action_settings">Settings</string>
+	<string name="action_search">Search</string>
+	<string name="action_clear">Clear</string>
+	<string name="action_go">Go</string>
+	<string name="tab_select_text">You selected \"%s\"</string>
+	<string name="tab_reselect_text">You accidentally selected \"%s\" again. What a waste! You\'ll never get these precious seconds back!</string>
+	<string name="nav_item_selected">You selected option №%d</string>
+	<string name="write_btn">Show</string>
+	<string name="input_text_string">Input text</string>
+	<string name="cant_search">Invalid search query: \"%s\"</string>
+
+	<string-array name="tabs_text">
+		<item>Tab #1</item>
+		<item>Second tab</item>
+		<item>3rd tab</item>
+		<item>4444</item>
+	</string-array>
 
 </resources>
