@@ -20,5 +20,7 @@
     <string name="title_activity_action_bar_with_up_button">ActionBarWithUpButton</string>
     <string name="simple_action_bar_text">Simple ActionBar</string>
     <string name="simple_action_bar_with_up_button_text">Simple ActionBar with Up button</string>
+    <string name="split_action_bar_text">Split ActionBar</string>
+    <string name="title_activity_split_action_bar">SplitActionBar</string>
 
 </resources>

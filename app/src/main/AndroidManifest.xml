@@ -28,6 +28,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.noveogroup.task3.RootActivity" />
         </activity>
+        <activity
+            android:name=".SplitActionBar"
+            android:label="@string/title_activity_split_action_bar"
+            android:parentActivityName=".RootActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noveogroup.task3.RootActivity" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow"/>
+        </activity>
     </application>
 
 </manifest>
