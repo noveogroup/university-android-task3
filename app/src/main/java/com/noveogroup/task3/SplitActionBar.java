@@ -29,9 +29,9 @@ public class SplitActionBar extends ActionBarActivity {
         switch (item.getItemId()) {
             case R.id.action_refresh:
                 Toast.makeText(this, "Refresh button", Toast.LENGTH_SHORT).show();
-                Toast.makeText(this, "Search button", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_search:
+                Toast.makeText(this, "Search button", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_share:
                 Toast.makeText(this, "Share button", Toast.LENGTH_SHORT).show();

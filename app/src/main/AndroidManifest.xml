@@ -32,13 +32,21 @@
             android:name=".SplitActionBar"
             android:label="@string/title_activity_split_action_bar"
             android:parentActivityName=".RootActivity"
-            android:uiOptions="splitActionBarWhenNarrow">
+            android:uiOptions="splitActionBarWhenNarrow" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.noveogroup.task3.RootActivity" />
             <meta-data
                 android:name="android.support.UI_OPTIONS"
-                android:value="splitActionBarWhenNarrow"/>
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name=".ActionBarWithNavigationTabs"
+            android:label="@string/title_activity_action_bar_with_navigation_tabs"
+            android:parentActivityName=".RootActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noveogroup.task3.RootActivity" />
         </activity>
     </application>
 
