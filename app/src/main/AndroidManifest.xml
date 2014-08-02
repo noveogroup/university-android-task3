@@ -20,6 +20,14 @@
             android:name=".SimpleActionBarActivity"
             android:label="@string/title_activity_simple_action_bar" >
         </activity>
+        <activity
+            android:name=".ActionBarWithUpButton"
+            android:label="@string/title_activity_action_bar_with_up_button"
+            android:parentActivityName=".RootActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noveogroup.task3.RootActivity" />
+        </activity>
     </application>
 
 </manifest>

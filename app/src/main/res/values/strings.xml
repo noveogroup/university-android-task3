@@ -17,5 +17,8 @@
     <string name="action_search">Search</string>
     <string name="action_share">Share</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_action_bar_with_up_button">ActionBarWithUpButton</string>
+    <string name="simple_action_bar_text">Simple ActionBar</string>
+    <string name="simple_action_bar_with_up_button_text">Simple ActionBar with Up button</string>
 
 </resources>

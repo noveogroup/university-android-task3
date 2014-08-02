@@ -49,7 +49,7 @@ public class RootActivity extends /*ActionBarActivity*/ Activity implements View
                 startActivity(new Intent(this, SimpleActionBarActivity.class));
                 break;
             case R.id.simple_action_bar_up_button:
-                //TODO
+                startActivity(new Intent(this, ActionBarWithUpButton.class));
                 break;
             case R.id.split_action_bar:
                 //TODO
