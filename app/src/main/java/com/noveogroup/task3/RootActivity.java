@@ -58,7 +58,7 @@ public class RootActivity extends /*ActionBarActivity*/ Activity implements View
                 startActivity(new Intent(this, ActionBarWithNavigationTabs.class));
                 break;
             case R.id.action_bar_with_navigation_list:
-                //TODO
+                startActivity(new Intent(this, ActionBarWithNavigationList.class));
                 break;
             case R.id.action_bar_with_custom_view:
                 //TODO

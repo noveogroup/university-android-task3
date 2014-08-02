@@ -23,5 +23,6 @@
     <string name="split_action_bar_text">Split ActionBar</string>
     <string name="title_activity_split_action_bar">Split ActionBar</string>
     <string name="title_activity_action_bar_with_navigation_tabs">Action bar with navigation tabs</string>
+    <string name="title_activity_action_bar_with_navigation_list">Action bar with navigation list</string>
 
 </resources>

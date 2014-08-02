@@ -48,6 +48,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.noveogroup.task3.RootActivity" />
         </activity>
+        <activity
+            android:name=".ActionBarWithNavigationList"
+            android:label="@string/title_activity_action_bar_with_navigation_list"
+            android:parentActivityName=".RootActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noveogroup.task3.RootActivity" />
+        </activity>
     </application>
 
 </manifest>
