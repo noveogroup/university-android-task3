@@ -24,5 +24,7 @@
     <string name="title_activity_split_action_bar">Split ActionBar</string>
     <string name="title_activity_action_bar_with_navigation_tabs">Action bar with navigation tabs</string>
     <string name="title_activity_action_bar_with_navigation_list">Action bar with navigation list</string>
+    <string name="title_activity_action_bar_with_custom_theme">Action bar with custom theme</string>
+    <string name="title_activity_action_bar_with_action_view">Action bar with action view</string>
 
 </resources>

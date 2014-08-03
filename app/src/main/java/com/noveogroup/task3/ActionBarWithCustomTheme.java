@@ -1,34 +1,28 @@
 package com.noveogroup.task3;
 
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
+import android.view.Window;
 import android.widget.Toast;
 
 import com.noveogroup.task3.R;
 
-public class ActionBarWithNavigationList extends ActionBarActivity implements ActionBar.OnNavigationListener {
+public class ActionBarWithCustomTheme extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_action_bar_with_navigation_list);
+        this.supportRequestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
+        setContentView(R.layout.activity_action_bar_with_custom_theme);
         getSupportActionBar().setTitle(R.string.app_name);
-
-        String[] data = new String[] {"one", "two", "three", "four"};
-        getSupportActionBar().setNavigationMode(getSupportActionBar().NAVIGATION_MODE_LIST);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, data);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        getSupportActionBar().setListNavigationCallbacks(adapter, this);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.action_bar_with_navigation_list, menu);
+        getMenuInflater().inflate(R.menu.action_bar_with_custom_theme, menu);
         return true;
     }
 
@@ -50,11 +44,5 @@ public class ActionBarWithNavigationList extends ActionBarActivity implements Ac
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-
-    @Override
-    public boolean onNavigationItemSelected(int i, long l) {
-        Toast.makeText(this, "Item " + i + " was clicked", Toast.LENGTH_SHORT).show();
-        return false;
     }
 }

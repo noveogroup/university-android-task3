@@ -16,7 +16,7 @@ public class ActionBarWithNavigationTabs extends ActionBarActivity implements Ac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_action_bar_with_navigation_tabs);
-        getSupportActionBar().setTitle(R.string.title_activity_action_bar_with_navigation_tabs);
+        getSupportActionBar().setTitle(R.string.app_name);
         getSupportActionBar().setNavigationMode(getSupportActionBar().NAVIGATION_MODE_TABS);
 
 

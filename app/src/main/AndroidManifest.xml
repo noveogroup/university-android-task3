@@ -56,6 +56,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.noveogroup.task3.RootActivity" />
         </activity>
+        <activity
+            android:name=".ActionBarWithActionView"
+            android:label="@string/title_activity_action_bar_with_action_view" >
+        </activity>
+        <activity
+            android:name=".ActionBarWithCustomTheme"
+            android:label="@string/title_activity_action_bar_with_custom_theme"
+            android:theme="@style/Theme.Customstyle" >
+        </activity>
     </application>
 
 </manifest>

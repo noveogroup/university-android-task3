@@ -64,10 +64,10 @@ public class RootActivity extends /*ActionBarActivity*/ Activity implements View
                 //TODO
                 break;
             case R.id.action_bar_with_custom_theme:
-                //TODO
+                startActivity(new Intent(this, ActionBarWithCustomTheme.class));
                 break;
             case R.id.action_bar_with_action_view:
-                //TODO
+                startActivity(new Intent(this, ActionBarWithActionView.class));
                 break;
             default:
                 break;
