@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">Task3</string>
-    <string name="dragon">Hey you! I\'m a Dragon!</string>
     <string name="simple">Simple Action bar</string>
     <string name="simple_up">Simple Action bar + Up button</string>
     <string name="split">Split Action bar</string>
@@ -17,7 +16,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_action_bar_with_up_button">ActionBarWithUpButton</string>
     <string name="title_activity_split_action_bar">SplitActionBar</string>
-    <string name="test_menu_item">test</string>
     <string name="title_activity_action_bar_with_tabs">ActionBarWithTabs</string>
     <string name="title_activity_action_bar_with_navigation_list">ActionBarWithNavigationList</string>
     <string name="actionbar_cheese">Cheese</string>
@@ -33,6 +31,13 @@
         <item>Chicken</item>
         <item>Beef</item>
         <item>Pork</item>
+    </string-array>
+
+    <string-array name="tabs_list">
+        <item>Croissant</item>
+        <item>Coffee</item>
+        <item>Chocolate</item>
+        <item>Strawberry</item>
     </string-array>
 
     <string name="title_activity_action_bar_with_custom_view">ActionBarWithCustomView</string>

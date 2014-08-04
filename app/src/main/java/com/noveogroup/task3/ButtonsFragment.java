@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 public class ButtonsFragment extends Fragment {
 
@@ -16,7 +15,7 @@ public class ButtonsFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_blank, container, false);
 
-        ((Button) view.findViewById(R.id.simple_actionbar)).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.simple_actionbar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), SimpleActionBarActivity.class);
@@ -24,7 +23,7 @@ public class ButtonsFragment extends Fragment {
             }
         });
 
-        ((Button) view.findViewById(R.id.simple_actionbar_with_upbutton)).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.simple_actionbar_with_upbutton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ActionBarWithUpButtonActivity.class);
@@ -32,7 +31,7 @@ public class ButtonsFragment extends Fragment {
             }
         });
 
-        ((Button) view.findViewById(R.id.split_action_bar_button)).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.split_action_bar_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), SplitActionBarActivity.class);
@@ -40,7 +39,7 @@ public class ButtonsFragment extends Fragment {
             }
         });
 
-        ((Button) view.findViewById(R.id.actionbar_with_tabs)).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.actionbar_with_tabs).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ActionBarWithTabsActivity.class);
@@ -48,7 +47,7 @@ public class ButtonsFragment extends Fragment {
             }
         });
 
-        ((Button) view.findViewById(R.id.actionbar_with_navigation_list)).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.actionbar_with_navigation_list).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ActionBarWithNavigationListActivity.class);
@@ -56,7 +55,7 @@ public class ButtonsFragment extends Fragment {
             }
         });
 
-        ((Button) view.findViewById(R.id.actionbar_with_custom_view)).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.actionbar_with_custom_view).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ActionBarWithCustomViewActivity.class);
@@ -64,7 +63,7 @@ public class ButtonsFragment extends Fragment {
             }
         });
 
-        ((Button) view.findViewById(R.id.actionbar_with_custom_theme)).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.actionbar_with_custom_theme).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ActionBarWithCustomThemeActivity.class);
@@ -72,7 +71,7 @@ public class ButtonsFragment extends Fragment {
             }
         });
 
-        ((Button) view.findViewById(R.id.actionbar_with_action_view)).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.actionbar_with_action_view).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ActionBarWithActionViewActivity.class);

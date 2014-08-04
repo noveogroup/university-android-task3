@@ -28,22 +28,6 @@ public class ActionBarWithCustomThemeActivity extends ActionBarActivity {
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setDisplayShowTitleEnabled(false);
 
-        createTab(actionBar, getResources().getString(R.string.actionbar_cheese), 0);
-        createTab(actionBar, getResources().getString(R.string.actionbar_tomato), 1);
-
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setSelectedNavigationItem(currentTab);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu items for use in the action bar
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    private void createTab(ActionBar actionBar, String text, int position) {
         ActionBar.TabListener tabListener = new ActionBar.TabListener() {
             @Override
             public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
@@ -63,6 +47,24 @@ public class ActionBarWithCustomThemeActivity extends ActionBarActivity {
             }
         };
 
+        String[] tabsStr = getResources().getStringArray(R.array.tabs_list);
+        for (int i = 0; i < tabsStr.length; i++) {
+            createTab(actionBar, tabsStr[i], i, tabListener);
+        }
+
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setSelectedNavigationItem(currentTab);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    private void createTab(ActionBar actionBar, String text, int position, ActionBar.TabListener tabListener) {
         ActionBar.Tab tab = actionBar.newTab()
                 .setText(text)
                 .setTabListener(tabListener);
