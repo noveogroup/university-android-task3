@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item android:id="@+id/action_0"
+        android:title="@string/actionbar_tomato"
+        yourapp:showAsAction="ifRoom"  />
+
+    <item android:id="@+id/action_1"
+        android:title="@string/actionbar_cheese"
+        yourapp:showAsAction="ifRoom"  />
+
+    <item android:id="@+id/action_2"
+        android:title="@string/actionbar_olives"
+        yourapp:showAsAction="ifRoom"  />
+
+    <item android:id="@+id/action_3"
+        android:title="@string/actionbar_anchovies"
+        yourapp:showAsAction="ifRoom"  />
+
+    <item android:id="@+id/action_4"
+        android:title="@string/actionbar_tomato"
+        yourapp:showAsAction="ifRoom"  />
+</menu>
