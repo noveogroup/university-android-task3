@@ -33,18 +33,20 @@
     <string name="tab_unselected">%s unselected</string>
     <string name="tab_reselected">%s reselected</string>
     <string name="item_was_clicked">Item %s was clicked</string>
+    <string name="say_something_text">Say something</string>
 
     <string-array name="tab_names">
         <item>Tab 1</item>
         <item>Tab 2</item>
         <item>Tab 3</item>
     </string-array>
-
     <string-array name="list_names">
         <item>One</item>
         <item>Two</item>
         <item>Three</item>
         <item>Four</item>
     </string-array>
+
+    <string name="title_activity_action_bar_with_custom_view">Action bar with custom view</string>
 
 </resources>

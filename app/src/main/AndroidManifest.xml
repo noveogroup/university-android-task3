@@ -63,7 +63,11 @@
         <activity
             android:name=".ActionBarWithCustomThemeActivity"
             android:label="@string/title_activity_action_bar_with_custom_theme"
-            android:theme="@style/Theme.Customstyle" >
+            android:theme="@style/Theme.Good" >
+        </activity>
+        <activity
+            android:name=".ActionBarWithCustomViewActivity"
+            android:label="@string/title_activity_action_bar_with_custom_view" >
         </activity>
     </application>
 
