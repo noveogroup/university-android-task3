@@ -2,13 +2,9 @@ package com.noveogroup.task3;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 
 public class RootActivity extends /*ActionBarActivity*/ Activity implements View.OnClickListener {
@@ -37,11 +33,6 @@ public class RootActivity extends /*ActionBarActivity*/ Activity implements View
         actionBarWithActionView.setOnClickListener(this);
     }
 
-    public void dummy(View view) {
-        Toast.makeText(this, R.string.dragon, Toast.LENGTH_SHORT).show();
-    }
-
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -49,25 +40,25 @@ public class RootActivity extends /*ActionBarActivity*/ Activity implements View
                 startActivity(new Intent(this, SimpleActionBarActivity.class));
                 break;
             case R.id.simple_action_bar_up_button:
-                startActivity(new Intent(this, ActionBarWithUpButton.class));
+                startActivity(new Intent(this, ActionBarWithUpButtonActivity.class));
                 break;
             case R.id.split_action_bar:
-                startActivity(new Intent(this, SplitActionBar.class));
+                startActivity(new Intent(this, SplitActionBarActivity.class));
                 break;
             case R.id.action_bar_with_navigation_tabs:
-                startActivity(new Intent(this, ActionBarWithNavigationTabs.class));
+                startActivity(new Intent(this, ActionBarWithNavigationTabsActivity.class));
                 break;
             case R.id.action_bar_with_navigation_list:
-                startActivity(new Intent(this, ActionBarWithNavigationList.class));
+                startActivity(new Intent(this, ActionBarWithNavigationListActivity.class));
                 break;
             case R.id.action_bar_with_custom_view:
                 //TODO
                 break;
             case R.id.action_bar_with_custom_theme:
-                startActivity(new Intent(this, ActionBarWithCustomTheme.class));
+                startActivity(new Intent(this, ActionBarWithCustomThemeActivity.class));
                 break;
             case R.id.action_bar_with_action_view:
-                startActivity(new Intent(this, ActionBarWithActionView.class));
+                startActivity(new Intent(this, ActionBarWithActionViewActivity.class));
                 break;
             default:
                 break;

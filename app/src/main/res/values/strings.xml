@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">Task3</string>
-    <string name="dragon">Hey you! I\'m a Dragon!</string>
     <string name="simple">Simple Action bar</string>
     <string name="simple_up">Simple Action bar + Up button</string>
     <string name="split">Split Action bar</string>
@@ -26,5 +25,26 @@
     <string name="title_activity_action_bar_with_navigation_list">Action bar with navigation list</string>
     <string name="title_activity_action_bar_with_custom_theme">Action bar with custom theme</string>
     <string name="title_activity_action_bar_with_action_view">Action bar with action view</string>
+    <string name="search_text">Search button</string>
+    <string name="share_text">Share button</string>
+    <string name="settings_text">Settings button</string>
+    <string name="refresh_text">Refresh button</string>
+    <string name="tab_selected">%s selected</string>
+    <string name="tab_unselected">%s unselected</string>
+    <string name="tab_reselected">%s reselected</string>
+    <string name="item_was_clicked">Item %s was clicked</string>
+
+    <string-array name="tab_names">
+        <item>Tab 1</item>
+        <item>Tab 2</item>
+        <item>Tab 3</item>
+    </string-array>
+
+    <string-array name="list_names">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+    </string-array>
 
 </resources>

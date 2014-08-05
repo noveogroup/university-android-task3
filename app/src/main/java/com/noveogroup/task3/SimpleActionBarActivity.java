@@ -32,16 +32,16 @@ public class SimpleActionBarActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_refresh:
-                Toast.makeText(this, "Refresh button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.refresh_text, Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_search:
-                Toast.makeText(this, "Search button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.search_text, Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_share:
-                Toast.makeText(this, "Share button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.share_text, Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_settings:
-                Toast.makeText(this, "Settings button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.settings_text, Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

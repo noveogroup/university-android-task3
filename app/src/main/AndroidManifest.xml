@@ -21,7 +21,7 @@
             android:label="@string/title_activity_simple_action_bar" >
         </activity>
         <activity
-            android:name=".ActionBarWithUpButton"
+            android:name=".ActionBarWithUpButtonActivity"
             android:label="@string/title_activity_action_bar_with_up_button"
             android:parentActivityName=".RootActivity" >
             <meta-data
@@ -29,7 +29,7 @@
                 android:value="com.noveogroup.task3.RootActivity" />
         </activity>
         <activity
-            android:name=".SplitActionBar"
+            android:name=".SplitActionBarActivity"
             android:label="@string/title_activity_split_action_bar"
             android:parentActivityName=".RootActivity"
             android:uiOptions="splitActionBarWhenNarrow" >
@@ -41,7 +41,7 @@
                 android:value="splitActionBarWhenNarrow" />
         </activity>
         <activity
-            android:name=".ActionBarWithNavigationTabs"
+            android:name=".ActionBarWithNavigationTabsActivity"
             android:label="@string/title_activity_action_bar_with_navigation_tabs"
             android:parentActivityName=".RootActivity" >
             <meta-data
@@ -49,7 +49,7 @@
                 android:value="com.noveogroup.task3.RootActivity" />
         </activity>
         <activity
-            android:name=".ActionBarWithNavigationList"
+            android:name=".ActionBarWithNavigationListActivity"
             android:label="@string/title_activity_action_bar_with_navigation_list"
             android:parentActivityName=".RootActivity" >
             <meta-data
@@ -57,11 +57,11 @@
                 android:value="com.noveogroup.task3.RootActivity" />
         </activity>
         <activity
-            android:name=".ActionBarWithActionView"
+            android:name=".ActionBarWithActionViewActivity"
             android:label="@string/title_activity_action_bar_with_action_view" >
         </activity>
         <activity
-            android:name=".ActionBarWithCustomTheme"
+            android:name=".ActionBarWithCustomThemeActivity"
             android:label="@string/title_activity_action_bar_with_custom_theme"
             android:theme="@style/Theme.Customstyle" >
         </activity>
