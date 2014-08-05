@@ -16,6 +16,59 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SimpleActionBarActivity"
+            android:label="@string/title_activity_simple_action_bar" >
+        </activity>
+        <activity
+            android:name=".ActionBarWithUpButtonActivity"
+            android:label="@string/title_activity_action_bar_with_up_button"
+            android:parentActivityName=".RootActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noveogroup.task3.RootActivity" />
+        </activity>
+        <activity
+            android:name=".SplitActionBarActivity"
+            android:label="@string/title_activity_split_action_bar"
+            android:parentActivityName=".RootActivity"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noveogroup.task3.RootActivity" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name=".ActionBarWithNavigationTabsActivity"
+            android:label="@string/title_activity_action_bar_with_navigation_tabs"
+            android:parentActivityName=".RootActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noveogroup.task3.RootActivity" />
+        </activity>
+        <activity
+            android:name=".ActionBarWithNavigationListActivity"
+            android:label="@string/title_activity_action_bar_with_navigation_list"
+            android:parentActivityName=".RootActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noveogroup.task3.RootActivity" />
+        </activity>
+        <activity
+            android:name=".ActionBarWithActionViewActivity"
+            android:label="@string/title_activity_action_bar_with_action_view" >
+        </activity>
+        <activity
+            android:name=".ActionBarWithCustomThemeActivity"
+            android:label="@string/title_activity_action_bar_with_custom_theme"
+            android:theme="@style/Theme.Good" >
+        </activity>
+        <activity
+            android:name=".ActionBarWithCustomViewActivity"
+            android:label="@string/title_activity_action_bar_with_custom_view" >
+        </activity>
     </application>
 
 </manifest>

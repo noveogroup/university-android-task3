@@ -2,8 +2,6 @@
 <resources>
 
     <string name="app_name">Task3</string>
-    <string name="dragon">Hey you! I\'m a Dragon!</string>
-
     <string name="simple">Simple Action bar</string>
     <string name="simple_up">Simple Action bar + Up button</string>
     <string name="split">Split Action bar</string>
@@ -12,5 +10,43 @@
     <string name="custom">Action bar with Custom view</string>
     <string name="themed">Action bar with custom theme</string>
     <string name="action">Action bar with Action view</string>
+    <string name="title_activity_simple_action_bar">SimpleActionBarActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">Search</string>
+    <string name="action_share">Share</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_action_bar_with_up_button">Action bar with up button</string>
+    <string name="simple_action_bar_text">Simple action bar</string>
+    <string name="simple_action_bar_with_up_button_text">Simple action bar with up button</string>
+    <string name="split_action_bar_text">Split ActionBar</string>
+    <string name="title_activity_split_action_bar">Split ActionBar</string>
+    <string name="title_activity_action_bar_with_navigation_tabs">Action bar with navigation tabs</string>
+    <string name="title_activity_action_bar_with_navigation_list">Action bar with navigation list</string>
+    <string name="title_activity_action_bar_with_custom_theme">Action bar with custom theme</string>
+    <string name="title_activity_action_bar_with_action_view">Action bar with action view</string>
+    <string name="search_text">Search button</string>
+    <string name="share_text">Share button</string>
+    <string name="settings_text">Settings button</string>
+    <string name="refresh_text">Refresh button</string>
+    <string name="tab_selected">%s selected</string>
+    <string name="tab_unselected">%s unselected</string>
+    <string name="tab_reselected">%s reselected</string>
+    <string name="item_was_clicked">Item %s was clicked</string>
+    <string name="say_something_text">Say something</string>
+
+    <string-array name="tab_names">
+        <item>Tab 1</item>
+        <item>Tab 2</item>
+        <item>Tab 3</item>
+    </string-array>
+    <string-array name="list_names">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+    </string-array>
+
+    <string name="title_activity_action_bar_with_custom_view">Action bar with custom view</string>
 
 </resources>
