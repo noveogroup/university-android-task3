@@ -5,7 +5,6 @@ university-android-task3
 
 - Простой Toolbar
 - Toolbar с кнопкой Up
-- Разделённый Action Bar
 - Toolbar со списком навигации
 - Toolbar с вкладками 
 - Toolbar с темой
