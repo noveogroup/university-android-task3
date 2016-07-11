@@ -20,47 +20,5 @@
             android:text="@string/simple"
             android:onClick="dummy"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/simple_up"
-            android:onClick="dummy"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/split"
-            android:onClick="dummy"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tabs"
-            android:onClick="dummy"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/list"
-            android:onClick="dummy"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/custom"
-            android:onClick="dummy"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/themed"
-            android:onClick="dummy"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/action"
-            android:onClick="dummy"/>
-
     </LinearLayout>
 </ScrollView>

@@ -4,13 +4,6 @@
     <string name="app_name">Task3</string>
     <string name="dragon">Hey you! I\'m a Dragon!</string>
 
-    <string name="simple">Simple Action bar</string>
-    <string name="simple_up">Simple Action bar + Up button</string>
-    <string name="split">Split Action bar</string>
-    <string name="tabs">Action bar with navigation tabs</string>
-    <string name="list">Action bar with navigation list</string>
-    <string name="custom">Action bar with Custom view</string>
-    <string name="themed">Action bar with custom theme</string>
-    <string name="action">Action bar with Action view</string>
+    <string name="simple">Task activity</string>
 
 </resources>
